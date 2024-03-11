@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: poppins;
+  color: #FFF;
+}
+.paddinglr{
+  padding: 0px 150px;
+}
+.nav-items a{
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.myColor{
+  color: #FFF;
+}
+
+.input{
+  width: 100%;
+  height: 69px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  color: #6B6B6B;
+}
+
+.myName:hover{
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+.myName{
+  transition: 0.5s ease-out;
+}
+
+@media screen and (max-width: 775px) {
+  .paddinglr{
+    padding: 0px 30px;
+  }
+  .nav-items a{
+    font-size: 10px;
+  }
+  
+}
+@media screen (max-width:775px) {
+  .social-icons{
+    width : 0px;
+  }
+}
+@media screen and (min-width:776px) and (max-width:990px) {
+  .social-icons{
+    /* width: 0; */
+  }
 }
