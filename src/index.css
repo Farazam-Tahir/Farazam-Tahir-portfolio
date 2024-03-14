@@ -39,22 +39,29 @@ a:hover{
   transition: 0.5s ease-out;
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 475px) {
   .paddinglr{
     padding: 0px 30px;
   }
   .nav-items a{
-    font-size: 10px;
+    display: none;
+  }
+  .social-icons{
+    display: none;
+  }
+  .card-ig{
+    object-fit: cover;
   }
   
 }
-@media screen (max-width:775px) {
+@media screen and (min-width:476px) and (max-width:990px) {
   .social-icons{
-    width : 0px;
+    /* display: none; */
   }
-}
-@media screen and (min-width:776px) and (max-width:990px) {
-  .social-icons{
-    /* width: 0; */
+  .paddinglr{
+    padding: 0px 30px;
+  }
+  .card-ig{
+    object-fit: cover;
   }
 }

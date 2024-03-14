@@ -30,11 +30,14 @@ const Cards = () => {
       {cardData.map((data)=>{
         return(
             <VStack w={['100%', '100%', '80%' , '45%']}  borderRadius='30px' bgColor='black' border='1px solid red' shadow={myShadow}>
-                <Image src={data.ig} h='330px' w='100%' objectFit='fit' borderTopRadius='30px'/>
-                <Heading color='#fff' mt='20px'>{data.heading}</Heading>
-                <Text color='#fff' fontSize='10px' mt='10px' px='78px' textAlign='justify'>
+                <Image src={data.ig} h={['200px','200px','330px','330px','330px']} w='100%' objectFit='fit' borderTopRadius='30px' className='card-ig'/>
+
+                <Heading color='#fff' mt='30px'>{data.heading}</Heading>
+                
+                <Text color='#fff' fontSize='10px' mt='10px' px={['40px','40px','50px','55px','78px']} textAlign='justify'>
                   {data.text}
                 </Text>
+                
                 <Button py='25px' my='20px' mb='30px' px='40px' bgColor='#00AAFF' borderRadius='30px' border={0}>
                   Visit Site
                 </Button>
